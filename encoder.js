@@ -28,7 +28,6 @@ var letters = {
   90: "z"
 }
 
-//var messageArray = messageToDecode.split("")
 
 
 $("#inputText").keyup(function(e) {
