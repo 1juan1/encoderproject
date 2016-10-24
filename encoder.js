@@ -1,3 +1,5 @@
+///////////////////////////////////////alphabet///////////////////////////////
+
 var letters = {
   64: "z",
   65: "a",
@@ -37,8 +39,12 @@ console.log("keycode");
   if ($("input:checked").val()== "echo") {
   document.getElementById("textArea").innerHTML += letters[e.keyCode];
 
+///////////////////////////////echo///////////////////
 } else if ($("input:checked").val()== "caesar") {
   document.getElementById("textArea").innerHTML += letters[e.keyCode - 1];
+
+
+///////////////////////////////////////////hieroglyphics////////////////
 
 } else if ($("input:checked").val()== "heiroglyphic") {
 
@@ -49,6 +55,10 @@ console.log("keycode");
   }
 
 });
+
+
+
+/////////////////////////////////////////////////////decoding.//////////////////////
 
 $('#translationInputText').keydown(function(e) {
 if(e.keyCode == 13) {
